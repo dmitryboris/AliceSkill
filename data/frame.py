@@ -13,6 +13,9 @@ class Frame(SqlAlchemyBase, UserMixin, SerializerMixin):
     film_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("movie.id"))
 
     film = orm.relation("Movie", back_populates='movie')
+    categories = orm.relation("Game",
+                              secondary="frames_to_game",
+                              backref="frame")
 
     def __repr__(self):
         return f'<User> {self.id} {self.name}'
