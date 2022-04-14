@@ -21,6 +21,7 @@ class Game(SqlAlchemyBase, UserMixin, SerializerMixin):
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
     user_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("user.id"))
     attempts = sqlalchemy.Column(sqlalchemy.Integer, default=3)
+    answered = sqlalchemy.Column(sqlalchemy.Integer)
 
     user = orm.relation("User", back_populates='game')
 

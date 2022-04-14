@@ -7,20 +7,7 @@ from data import db_session
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 
-logging.basicConfig(level=logging.INFO)
-
-# создаем словарь, в котором ключ — название города,
-# а значение — массив, где перечислены id картинок,
-# которые мы записали в прошлом пункте.
-
-cities = {
-    'москва': ['997614/edca92b39e1f13c8d5b3',
-               '1533899/14ec18ba70adf3e51f5f'],
-    'нью-йорк': ['1030494/3dfe30eb5de97c4dd91b',
-                 '965417/d27e33ca69058ebce5e3'],
-    'париж': ["1652229/2c667693f5a315ba0955",
-              '1521359/fabfbe3698c422edeff1']
-}
+logging.basicConfig(filename='logging.log')
 
 # создаем словарь, где для каждого пользователя
 # мы будем хранить его имя
@@ -98,16 +85,6 @@ def handle_dialog(res, req):
         else:
             res['response']['text'] = \
                 'Первый раз слышу об этом городе. Попробуй еще разок!'
-
-
-def get_city(req):
-    # перебираем именованные сущности
-    for entity in req['request']['nlu']['entities']:
-        # если тип YANDEX.GEO то пытаемся получить город(city),
-        # если нет, то возвращаем None
-        if entity['type'] == 'YANDEX.GEO':
-            # возвращаем None, если не нашли сущности с типом YANDEX.GEO
-            return entity['value'].get('city', None)
 
 
 def get_first_name(req):
