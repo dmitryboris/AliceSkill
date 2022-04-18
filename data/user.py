@@ -1,6 +1,6 @@
 import sqlalchemy
 from flask_login import UserMixin
-from sqlalchemy import orm
+from sqlalchemy.orm import relationship
 from sqlalchemy_serializer import SerializerMixin
 
 from data.db_session import SqlAlchemyBase
@@ -13,7 +13,7 @@ class User(SqlAlchemyBase, UserMixin, SerializerMixin):
     name = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     rating = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True)
 
-    game = orm.relation('Game')
+    game = relationship('Game')
 
     def __repr__(self):
         return f'<User> {self.id} {self.name}'
