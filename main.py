@@ -3,15 +3,12 @@ import logging
 import json
 import random
 from data import db_session
+from data.user import User
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 
-logging.basicConfig(filename='logging.log')
-
-# создаем словарь, где для каждого пользователя
-# мы будем хранить его имя
-sessionStorage = {}
+logging.basicConfig(filename='logs/logging.log')
 
 
 @app.route('/post', methods=['POST'])
@@ -21,7 +18,7 @@ def main():
         'session': request.json['session'],
         'version': request.json['version'],
         'response': {
-            'end_session': False
+            'end_session': False,
         }
     }
     handle_dialog(response, request.json)
@@ -30,53 +27,18 @@ def main():
 
 
 def handle_dialog(res, req):
-    user_id = req['session']['user_id']
+    db_sess = db_session.create_session()
+    user_id = req['session']['user']['user_id']
 
-    # если пользователь новый, то просим его представиться.
+    # если сессия новая, то приветсвуем пользователя.
     if req['session']['new']:
-        res['response']['text'] = 'Привет! Назови свое имя!'
-        # создаем в БД нового пользователя
-        return
-
-    # если пользователь не новый, то попадаем сюда.
-    # если поле имени пустое, то это говорит о том,
-    # что пользователь еще не представился.
-    if sessionStorage[user_id]['first_name'] is None:
-        # в последнем его сообщение ищем имя.
-        first_name = get_first_name(req)
-        # если не нашли, то сообщаем пользователю что не расслышали.
-        if first_name is None:
-            res['response']['text'] = \
-                'Не расслышала имя. Повтори, пожалуйста!'
-        # если нашли, то приветствуем пользователя.
-        # И спрашиваем какой город он хочет увидеть.
-        else:
-            sessionStorage[user_id]['first_name'] = first_name
-            res['response'][
-                'text'] = 'Приятно познакомиться, ' \
-                          + first_name.title() \
-                          + '. Я - Алиса. Какой режим хочешь выбрать?'
-            # получаем варианты buttons
-            res['response']['buttons'] = []
-    # если мы знакомы с пользователем и он нам что-то написал,
-    # то это говорит о том, что он уже говорит о городе,
-    # что хочет увидеть.
+        greeting(res, db_sess, user_id)
     else:
-        # ищем город в сообщение от пользователя
-        city = get_city(req)
-        # если этот город среди известных нам,
-        # то показываем его (выбираем одну из двух картинок случайно)
-        if city in cities:
-            res['response']['card'] = {}
-            res['response']['card']['type'] = 'BigImage'
-            res['response']['card']['title'] = 'Этот город я знаю.'
-            res['response']['card']['image_id'] = random.choice(cities[city])
-            res['response']['text'] = 'Я угадал!'
-        # если не нашел, то отвечает пользователю
-        # 'Первый раз слышу об этом городе.'
-        else:
-            res['response']['text'] = \
-                'Первый раз слышу об этом городе. Попробуй еще разок!'
+        # если сессия не новая, то знакомимся.
+        acquaintance(req, res, db_sess, user_id)
+        start_game(req, res)
+
+    return res
 
 
 def get_first_name(req):
@@ -88,6 +50,80 @@ def get_first_name(req):
             # то возвращаем ее значение.
             # Во всех остальных случаях возвращаем None.
             return entity['value'].get('first_name', None)
+
+
+def new_user(db_sess, user_id):
+    user = User()
+    user.yandex_id = user_id
+    user.name = None
+    db_sess.add(user)
+    db_sess.commit()
+
+
+def greeting(res, db_sess, user_id):
+    user = db_sess.query(User).filter(User.yandex_id == user_id).first()
+
+    if not user:
+        res['response']['text'] = 'Привет! Назови свое имя!'
+        # создаем в БД нового пользователя
+        new_user(db_sess, user_id)
+        return
+
+    elif user and not user.name:
+        res['response']['text'] = 'Привет! Мы не познакомились в прошлый раз. Назови свое имя'
+
+    if user and user.name:
+        res['response']['text'] = f'Привет, {user.name}! Какой режим хочешь выбрать?'
+        # получаем варианты buttons
+        res['response']['buttons'] = [
+            {"title": "Режим с подсказками",
+             "hide": True},
+            {"title": "Режим без подсказок",
+             "hide": True}
+        ]
+
+
+def acquaintance(req, res, db_sess, user_id):
+    user = db_sess.query(User).filter(User.yandex_id == user_id).first()
+
+    # если поле имени пустое, то это говорит о том,
+    # что пользователь еще не представился.
+    if user.name is None:
+        # в последнем его сообщение ищем имя.
+        first_name = get_first_name(req)
+        # если не нашли, то сообщаем пользователю что не расслышали.
+        if first_name is None:
+            res['response']['text'] = 'Не расслышала имя. Повтори, пожалуйста!'
+        # если нашли, то приветствуем пользователя.
+        # И спрашиваем какой режим он хочет выбрать.
+        else:
+            user.name = first_name.title()
+            db_sess.commit()
+            res['response']['text'] = 'Приятно познакомиться, ' \
+                                      + first_name.title() \
+                                      + '. Я - Алиса. Какой режим хочешь выбрать?'
+            # получаем варианты buttons
+            res['response']['buttons'] = [
+                {"title": "Режим с подсказками",
+                 "hide": True},
+                {"title": "Режим без подсказок",
+                 "hide": True}
+            ]
+
+
+def start_game(req, res):
+    if req["request"]["command"] == "режим с подсказками":
+        game_with_hints(res)
+    elif req["request"]["command"] == "режим без подсказок":
+        game_without_hints(res)
+
+
+def game_with_hints(res):
+    res["response"]["text"] = "Игра с подсказками"
+
+
+def game_without_hints(res):
+    res["response"]["text"] = "Игра без подсказок"
 
 
 if __name__ == '__main__':

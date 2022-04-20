@@ -13,11 +13,11 @@ class Frame(SqlAlchemyBase, UserMixin, SerializerMixin):
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
 
     film_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("movie.id"))
-    film = relationship("Movie", back_populates='movie')
+    film = relationship("Movie", back_populates='frame')
 
     games = relationship('Game',
                          secondary=association_table,
-                         back_populates='game')
+                         back_populates='frames')
 
     def __repr__(self):
         return f'<Frame> {self.id} {self.name}'

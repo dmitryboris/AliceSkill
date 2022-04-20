@@ -1,0 +1,2350 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:26:21] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:27:57] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:28:19] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:30:15] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:31:51] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:32:58] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:34:20] "[33mPOST / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:127.0.0.1 - - [18/Apr/2022 20:35:20] code 400, message Bad request version ('4.4.2)","interfaces":{"screen":{},"payments":{},"account_linking":{}}},"session":{"message_id":0,"session_id":"05ab92ff-438e-4d7b-bb12-914b6fff49e7","skill_id":"70d0e50a-b9fa-45b5-9516-dd221d740823","user":{"user_id":"012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E"},"application":{"application_id":"3837D7D8AE4FD1A1992FF05530301B337813C993778112B7CFB9EB57A3BC16FC"},"user_id":"3837D7D8AE4FD1A1992FF05530301B337813C993778112B7CFB9EB57A3BC16FC","new":true},"request":{"command":"","original_utterance":"","nlu":{"tokens":[],"entities":[],"intents":{}},"markup":{"dangerous_context":false},"type":"SimpleUtterance"},"version":"1.0"}')
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:35:20] "[35m[1mNone / HTTP/0.9[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:35:52] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:37:55] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:43:21] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:43:47] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:44:20] "POST /post HTTP/1.1" 200 -
+ERROR:werkzeug:127.0.0.1 - - [18/Apr/2022 20:44:30] code 400, message Bad request syntax ('{"meta":{"locale":"ru-RU","timezone":"UTC","client_id":"ru.yandex.searchplugin/7.16 (none none; android 4.4.2)","interfaces":{"screen":{},"payments":{},"account_linking":{}}},"session":{"message_id":0,"session_id":"e301d455-62bb-4e5f-9af9-6a47cabe82c1","skill_id":"70d0e50a-b9fa-45b5-9516-dd221d740823","user":{"user_id":"012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E"},"application":{"application_id":"3837D7D8AE4FD1A1992FF05530301B337813C993778112B7CFB9EB57A3BC16FC"},"new":true,"user_id":"3837D7D8AE4FD1A1992FF05530301B337813C993778112B7CFB9EB57A3BC16FC"},"request":{"command":"","original_utterance":"","nlu":{"tokens":[],"entities":[],"intents":{}},"markup":{"dangerous_context":false},"type":"SimpleUtterance"},"version":"1.0"}POST /post HTTP/1.1')
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:44:30] "[35m[1mNone / HTTP/1.1[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:49:18] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 30, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 47, in handle_dialog
+    if sessionStorage[user_id]['first_name'] is None:
+KeyError: '3837D7D8AE4FD1A1992FF05530301B337813C993778112B7CFB9EB57A3BC16FC'
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:49:25] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:49:31] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 30, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 47, in handle_dialog
+    if sessionStorage[user_id]['first_name'] is None:
+KeyError: '3837D7D8AE4FD1A1992FF05530301B337813C993778112B7CFB9EB57A3BC16FC'
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:49:38] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:50:55] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 30, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 48, in handle_dialog
+    if sessionStorage[user_id]['first_name'] is None:
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:50:58] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:51:03] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 30, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 48, in handle_dialog
+    if sessionStorage[user_id]['first_name'] is None:
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:51:05] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:51:39] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 46, in handle_dialog
+    if sessionStorage[user_id]['first_name'] is None:
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:51:45] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:51:52] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 46, in handle_dialog
+    if sessionStorage[user_id]['first_name'] is None:
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:52:00] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:55:41] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 45, in handle_dialog
+    if sessionStorage[user_id]['first_name'] is None:
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:55:43] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:55:47] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 45, in handle_dialog
+    if sessionStorage[user_id]['first_name'] is None:
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:55:50] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:56:04] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:56:10] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 45, in handle_dialog
+    if sessionStorage[user_id]['first_name'] is None:
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:56:13] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:59:04] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 45, in handle_dialog
+    if sessionStorage[user_id]['first_name'] is None:
+KeyError: 'first_name'
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 20:59:08] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:32] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:34] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:40] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2022 21:00:43] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 2013, in get_property
+    return self._props[key]
+KeyError: 'frame'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 103, in new_user
+    user = User()
+  File "<string>", line 4, in __init__
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\state.py", line 474, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\event\attr.py", line 343, in __call__
+    fn(*args, **kw)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3610, in _event_on_init
+    instrumenting_mapper._check_configure()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 1901, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3425, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3464, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 1918, in _post_configure_properties
+    prop.init()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\interfaces.py", line 231, in init
+    self.do_init()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2155, in do_init
+    self._generate_backref()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2491, in _generate_backref
+    self._add_reverse_property(self.back_populates)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2061, in _add_reverse_property
+    other = self.mapper.get_property(key, _configure_mappers=False)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 2015, in get_property
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Mapper 'mapped class Frame->frame' has no property 'frame'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:24:54] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 103, in new_user
+    user = User()
+  File "<string>", line 4, in __init__
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\state.py", line 474, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\event\attr.py", line 343, in __call__
+    fn(*args, **kw)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3610, in _event_on_init
+    instrumenting_mapper._check_configure()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 1901, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3425, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3460, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Game->game'. Original exception was: Mapper 'mapped class Frame->frame' has no property 'frame'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:25:21] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 2013, in get_property
+    return self._props[key]
+KeyError: 'frame'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 103, in new_user
+    user = User()
+  File "<string>", line 4, in __init__
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\state.py", line 474, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\event\attr.py", line 343, in __call__
+    fn(*args, **kw)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3610, in _event_on_init
+    instrumenting_mapper._check_configure()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 1901, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3425, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3464, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 1918, in _post_configure_properties
+    prop.init()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\interfaces.py", line 231, in init
+    self.do_init()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2155, in do_init
+    self._generate_backref()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2491, in _generate_backref
+    self._add_reverse_property(self.back_populates)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2061, in _add_reverse_property
+    other = self.mapper.get_property(key, _configure_mappers=False)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 2015, in get_property
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Mapper 'mapped class Frame->frame' has no property 'frame'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:31:38] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 2013, in get_property
+    return self._props[key]
+KeyError: 'game'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 103, in new_user
+    user = User()
+  File "<string>", line 4, in __init__
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\state.py", line 474, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\event\attr.py", line 343, in __call__
+    fn(*args, **kw)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3610, in _event_on_init
+    instrumenting_mapper._check_configure()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 1901, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3425, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3464, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 1918, in _post_configure_properties
+    prop.init()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\interfaces.py", line 231, in init
+    self.do_init()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2155, in do_init
+    self._generate_backref()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2491, in _generate_backref
+    self._add_reverse_property(self.back_populates)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2061, in _add_reverse_property
+    other = self.mapper.get_property(key, _configure_mappers=False)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 2015, in get_property
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Mapper 'mapped class User->user' has no property 'game'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:39:25] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 2013, in get_property
+    return self._props[key]
+KeyError: 'movie'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 103, in new_user
+    user = User()
+  File "<string>", line 4, in __init__
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\state.py", line 474, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\event\attr.py", line 343, in __call__
+    fn(*args, **kw)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3610, in _event_on_init
+    instrumenting_mapper._check_configure()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 1901, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3425, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 3464, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 1918, in _post_configure_properties
+    prop.init()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\interfaces.py", line 231, in init
+    self.do_init()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2155, in do_init
+    self._generate_backref()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2491, in _generate_backref
+    self._add_reverse_property(self.back_populates)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\relationships.py", line 2061, in _add_reverse_property
+    other = self.mapper.get_property(key, _configure_mappers=False)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\mapper.py", line 2015, in get_property
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: Mapper 'mapped class Movie->movie' has no property 'movie'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:40:25] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:41:41] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 48, in handle_dialog
+    if user.name is None:
+AttributeError: 'Query' object has no attribute 'name'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:41:45] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 107, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:43:00] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 107, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:45:24] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:47:49] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:47:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:47:58] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:48:02] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:48:34] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 34, in handle_dialog
+    db_sess = db_session.create_session()
+  File "C:\Users\Dima\PycharmProjects\Alices_Skill\data\db_session.py", line 34, in create_session
+    return __factory()
+TypeError: 'NoneType' object is not callable
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:49:48] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 34, in handle_dialog
+    db_sess = db_session.create_session()
+  File "C:\Users\Dima\PycharmProjects\Alices_Skill\data\db_session.py", line 34, in create_session
+    return __factory()
+TypeError: 'NoneType' object is not callable
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:49:52] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 107, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:50:23] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 107, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:51:06] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 107, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:51:55] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:53:57] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 107, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:54:17] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:55:25] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:55:35] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:56:33] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:56:58] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:57:05] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:57:59] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    # создаем в БД нового пользователя
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.add(user)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:58:06] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:58:57] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:59:02] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 20:59:08] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 42, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 109, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '3837D7D8AE4FD1A1992FF05530301B337813C993778112B7CFB9EB57A3BC16FC', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:20:48] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 42, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 109, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '3837D7D8AE4FD1A1992FF05530301B337813C993778112B7CFB9EB57A3BC16FC', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:21:03] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 42, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 109, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '3837D7D8AE4FD1A1992FF05530301B337813C993778112B7CFB9EB57A3BC16FC', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:23:07] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:25:50] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.yandex_id, user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.yandex_id, user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:27:06] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:30:15] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:30:23] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:30:33] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: user.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: user.id
+[SQL: INSERT INTO user (yandex_id, name, rating) VALUES (?, ?, ?)]
+[parameters: ('012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:36:23] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: user.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: user.id
+[SQL: INSERT INTO user (yandex_id, name, rating) VALUES (?, ?, ?)]
+[parameters: ('012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:36:26] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:37:18] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:37:22] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:37:25] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:41:13] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:41:16] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:41:18] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:42:03] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:42:24] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: user.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: user.id
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:43:02] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: user.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: user.id
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:43:38] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: user.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: user.id
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:44:57] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: user.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: user.id
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:50:47] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: user.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    new_user(db_sess, user_id)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 108, in new_user
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: user.id
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, '012C649F76A9146B140148E4525816E467CDAB2F5B8172DC7A94ABE3945FCF5E', None, 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:51:44] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:52:30] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:52:37] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:52:42] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.rating
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 41, in handle_dialog
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\persistence.py", line 1238, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.rating
+[SQL: INSERT INTO user (id, yandex_id, name, rating) VALUES (?, ?, ?, ?)]
+[parameters: (None, None, 'Пользователь 1', 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:54:14] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 39, in handle_dialog
+    db_sess.commit()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1431, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3469, in _flush
+    flush_context.finalize_flush_changes()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 477, in finalize_flush_changes
+    self.session._register_persistent(other)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 2498, in _register_persistent
+    raise exc.FlushError(
+sqlalchemy.orm.exc.FlushError: Instance <User at 0x48d1c58> has a NULL identity key.  If this is an auto-generated value, check that the database table allows generation of new primary key values, and that the mapped Column object is configured to expect these generated values.  Ensure also that this flush() is not occurring at an inappropriate time, such as within a load() event.
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:57:38] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:58:47] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:59:11] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:59:41] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 21:59:46] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 22:04:44] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 22:04:58] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 22:05:42] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 22:05:47] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 22:06:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 22:06:56] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 22:08:54] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 22:08:58] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 22:11:58] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2022 22:12:03] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 17:16:20] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:24:11] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:24:14] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:24:19] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:24:24] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:24:33] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:40:44] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:40:48] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:41:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:42:02] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:42:04] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:44:01] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:44:05] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:44:10] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:44:14] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:59:23] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 24, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 39, in handle_dialog
+    start_game(req)
+TypeError: start_game() missing 1 required positional argument: 'res'
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 18:59:26] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:00:18] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:00:20] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:00:25] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:00:27] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:00:35] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:01:14] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:01:16] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:01:33] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:01:36] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:01:41] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:01:44] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:03:25] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:03:28] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:03:31] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:03:36] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2022 19:03:39] "POST /post HTTP/1.1" 200 -

@@ -17,7 +17,7 @@ class Game(SqlAlchemyBase, UserMixin, SerializerMixin):
 
     frames = relationship('Frame',
                           secondary=association_table,
-                          back_populates='frame')
+                          back_populates='games')
 
     user_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("user.id"))
     user = relationship("User", back_populates='game')
