@@ -4,6 +4,9 @@ import json
 import random
 from data import db_session
 from data.user import User
+from data.game import Game
+from data.movie import Movie
+from data.frame import Frame
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
@@ -29,6 +32,7 @@ def main():
 def handle_dialog(res, req):
     db_sess = db_session.create_session()
     user_id = req['session']['user']['user_id']
+    user = db_sess.query(User).filter(User.yandex_id == user_id).first()
 
     # если сессия новая, то приветсвуем пользователя.
     if req['session']['new']:
@@ -36,7 +40,8 @@ def handle_dialog(res, req):
     else:
         # если сессия не новая, то знакомимся.
         acquaintance(req, res, db_sess, user_id)
-        start_game(req, res)
+        start_game(req, res, db_sess, user_id)
+        continue_game(req, res, db_sess, user_id)
 
     return res
 
@@ -101,7 +106,7 @@ def acquaintance(req, res, db_sess, user_id):
             db_sess.commit()
             res['response']['text'] = 'Приятно познакомиться, ' \
                                       + first_name.title() \
-                                      + '. Я - Алиса. Какой режим хочешь выбрать?'
+                                      + '. Я - бот "Угадай кино по картинке". Какой режим хочешь выбрать?'
             # получаем варианты buttons
             res['response']['buttons'] = [
                 {"title": "Режим с подсказками",
@@ -111,19 +116,33 @@ def acquaintance(req, res, db_sess, user_id):
             ]
 
 
-def start_game(req, res):
-    if req["request"]["command"] == "режим с подсказками":
-        game_with_hints(res)
-    elif req["request"]["command"] == "режим без подсказок":
-        game_without_hints(res)
+def start_game(req, res, db_sess, user_id):
+    if req["request"]["command"] == "режим с подсказками" or req["request"]["command"] == "режим без подсказок":
+        user = db_sess.query(User).filter(User.yandex_id == user_id).first()
+        game = Game()
+        game.user_id = user.id
+        if req["request"]["command"] == "режим с подсказками":
+            game.hints = 3
+        db_sess.add(game)
+        db_sess.commit()
 
 
-def game_with_hints(res):
-    res["response"]["text"] = "Игра с подсказками"
-
-
-def game_without_hints(res):
-    res["response"]["text"] = "Игра без подсказок"
+def continue_game(req, res, db_sess, user_id):
+    user = db_sess.query(User).filter(User.yandex_id == user_id).first()
+    game = db_sess.query(Game).filter(Game.user_id == user.id).first()
+    if game:
+        res['response']['card'] = {}
+        res['response']['card']['type'] = 'BigImage'
+        res['response']['card']['title'] = 'Как называется этот фильм'
+        frames_id = [frame.id for frame in db_sess.query(Frame).all()]
+        res['response']['card']['image_id'] = random.choice(frames_id)
+        res['response']['text'] = 'Как называется этот фильм'
+        res['response']['buttons'] = [
+            {"title": "xи",
+             "hide": True},
+            {"title": "xк",
+             "hide": True}
+        ]
 
 
 if __name__ == '__main__':

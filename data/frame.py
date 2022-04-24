@@ -10,7 +10,7 @@ from data.db_session import SqlAlchemyBase
 class Frame(SqlAlchemyBase, UserMixin, SerializerMixin):
     __tablename__ = 'frame'
 
-    id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
+    id = sqlalchemy.Column(sqlalchemy.String, primary_key=True)
 
     film_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("movie.id"))
     film = relationship("Movie", back_populates='frame')
