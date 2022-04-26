@@ -43,18 +43,21 @@ def handle_dialog(res, req):
 
     # если сессия новая, то приветсвуем пользователя.
     if req['session']['new']:
-        greeting(res, db_sess, user_id)
+        greeting(res, db_sess, user_id, game)
     else:
         if user and not game:
             # если сессия не новая, то знакомимся.
             acquaintance(req, res, db_sess, user)
-            game = start_game(req, res, db_sess, user, game)
+            game = start_game(req, db_sess, user, game)
         if user and game:
-            check_answer(req, res, db_sess, game)
-            if game.end:
-                end_game(res, game)
-            else:
-                continue_game(req, res, db_sess, user, game)
+            # old = check_old_game() все дальше обернуть в if not old?
+            old = check_old_game(req, res, db_sess, game)
+            if not old:
+                check_answer(req, res, db_sess, game)
+                if game.end:
+                    end_game(res, db_sess, game)
+                else:
+                    continue_game(res, db_sess, game)
 
     return res
 
@@ -78,7 +81,7 @@ def new_user(db_sess, user_id):
     db_sess.commit()
 
 
-def greeting(res, db_sess, user_id):
+def greeting(res, db_sess, user_id, game):
     user = db_sess.query(User).filter(User.yandex_id == user_id).first()
 
     if not user:
@@ -97,6 +100,17 @@ def greeting(res, db_sess, user_id):
             {"title": "Режим с подсказками",
              "hide": True},
             {"title": "Режим без подсказок",
+             "hide": True}
+        ]
+    # ???
+
+    if user and user.name and game:
+        res['response']['text'] = f'Привет, {user.name}! Похоже ты не доиграл предыдущую игру. Хочешь продолжить?'
+        # получаем варианты buttons
+        res['response']['buttons'] = [
+            {"title": "Да, хочу продолжить",
+             "hide": True},
+            {"title": "Нет, хочу начать новую",
              "hide": True}
         ]
 
@@ -127,7 +141,7 @@ def acquaintance(req, res, db_sess, user):
             ]
 
 
-def start_game(req, res, db_sess, user, game):
+def start_game(req, db_sess, user, game):
     if req["request"]["command"] == "режим с подсказками" or \
             req["request"]["command"] == "режим без подсказок" and not game:
         game = Game()
@@ -141,7 +155,7 @@ def start_game(req, res, db_sess, user, game):
         return game
 
 
-def continue_game(req, res, db_sess, user, game):
+def continue_game(res, db_sess, game):
     frames_id = [frame.id for frame in db_sess.query(Frame).all()]
     previous_frames = [frame.id for frame in game.frames]
     diff = set(frames_id) - set(previous_frames)
@@ -174,7 +188,7 @@ def check_answer(req, res, db_sess, game):
     if game.frames:
         previous_frame = game.frames[-1]
         movie = db_sess.query(Movie).filter(Movie.id == previous_frame.film_id).first()
-        if req["request"]["original_utterance"] == movie.name:
+        if req["request"]["original_utterance"].lower() == movie.name.lower():
             res['response']['text'] = 'Верно. Следующий кадр.'
             game.answered += 1
         else:
@@ -185,7 +199,7 @@ def check_answer(req, res, db_sess, game):
         db_sess.commit()
 
 
-def end_game(res, game):
+def end_game(res, db_sess, game):
     if game.answered == 5:
         res['response']['text'] = 'Мои поздравления. Это победа. Хочешь сыграть ещё?'
         game.user.rating += 3
@@ -198,6 +212,35 @@ def end_game(res, game):
         {"title": "Режим без подсказок",
          "hide": True}
     ]
+    db_sess.commit()
+
+
+# copy paste - redo
+def check_old_game(req, res, db_sess, game):
+    if req["request"]["command"] == "да хочу продолжить":
+        old = True
+        previous_frame = game.frames[-1]
+        movie = db_sess.query(Movie).filter(Movie.id == previous_frame.film_id).first()
+        movie_names = sample([movie.name for movie in db_sess.query(Movie).all()], 4)
+        if movie.name not in movie_names:
+            movie_names.append(movie.name)
+            movie_names.pop(0)
+        shuffle(movie_names)
+
+        res['response']['card'] = {}
+        res['response']['card']['type'] = 'BigImage'
+        res['response']['card']['image_id'] = previous_frame.id
+        res['response']['text'] = 'Это кадр из фильма, который ты в прошлый раз не назвал.' + \
+                                  ' Как называется этот фильм?'
+        res['response']['card']['title'] = 'Это кадр из фильма, который ты в прошлый раз не назвал.' + \
+                                           ' Как называется этот фильм?'
+        res['response']['buttons'] = [
+            {"title": name,
+             "hide": True}
+            for name in movie_names]
+    else:
+        old = None
+    return old
 
 
 if __name__ == '__main__':
