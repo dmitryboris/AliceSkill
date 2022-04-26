@@ -51,10 +51,10 @@ def handle_dialog(res, req):
             game = start_game(req, res, db_sess, user, game)
         if user and game:
             check_answer(req, res, db_sess, game)
-            if res['response']['text'] == '' or res['response']['text'] == 'Верно. Следующий кадр.':
-                continue_game(req, res, db_sess, user, game)
+            if game.end:
+                end_game(res, game)
             else:
-                end_game()
+                continue_game(req, res, db_sess, user, game)
 
     return res
 
@@ -178,18 +178,26 @@ def check_answer(req, res, db_sess, game):
             res['response']['text'] = 'Верно. Следующий кадр.'
             game.answered += 1
         else:
-            res['response']['text'] = 'Неверно. Похоже ты проиграл.'
             game.end = True
 
         if game.answered == 5:
             game.end = True
-            game.user.rating += game.answered + 3
-            res['response']['text'] = 'Мои поздравления. Это победа'
         db_sess.commit()
 
 
-def end_game():
-    pass
+def end_game(res, game):
+    if game.answered == 5:
+        res['response']['text'] = 'Мои поздравления. Это победа. Хочешь сыграть ещё?'
+        game.user.rating += 3
+    else:
+        res['response']['text'] = 'Неверно. Похоже ты проиграл. Ничего страшного, хочешь сыграть ещё?'
+    game.user.rating += game.answered
+    res['response']['buttons'] = [
+        {"title": "Режим с подсказками",
+         "hide": True},
+        {"title": "Режим без подсказок",
+         "hide": True}
+    ]
 
 
 if __name__ == '__main__':
