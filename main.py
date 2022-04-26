@@ -1,7 +1,7 @@
 from flask import Flask, request
 import logging
 import json
-import random
+from random import sample, choice, shuffle
 from data import db_session
 from data.user import User
 from data.game import Game
@@ -22,6 +22,7 @@ def main():
         'version': request.json['version'],
         'response': {
             'end_session': False,
+            'text': ''
         }
     }
     handle_dialog(response, request.json)
@@ -33,15 +34,27 @@ def handle_dialog(res, req):
     db_sess = db_session.create_session()
     user_id = req['session']['user']['user_id']
     user = db_sess.query(User).filter(User.yandex_id == user_id).first()
+    if user:
+        game = db_sess.query(Game).filter(Game.user_id == user.id).all()[-1]
+        if game.end:
+            game = None
+    else:
+        game = None
 
     # если сессия новая, то приветсвуем пользователя.
     if req['session']['new']:
         greeting(res, db_sess, user_id)
     else:
-        # если сессия не новая, то знакомимся.
-        acquaintance(req, res, db_sess, user_id)
-        start_game(req, res, db_sess, user_id)
-        continue_game(req, res, db_sess, user_id)
+        if user and not game:
+            # если сессия не новая, то знакомимся.
+            acquaintance(req, res, db_sess, user)
+            game = start_game(req, res, db_sess, user, game)
+        if user and game:
+            check_answer(req, res, db_sess, game)
+            if res['response']['text'] == '' or res['response']['text'] == 'Верно. Следующий кадр.':
+                continue_game(req, res, db_sess, user, game)
+            else:
+                end_game()
 
     return res
 
@@ -88,9 +101,7 @@ def greeting(res, db_sess, user_id):
         ]
 
 
-def acquaintance(req, res, db_sess, user_id):
-    user = db_sess.query(User).filter(User.yandex_id == user_id).first()
-
+def acquaintance(req, res, db_sess, user):
     # если поле имени пустое, то это говорит о том,
     # что пользователь еще не представился.
     if user.name is None:
@@ -100,7 +111,7 @@ def acquaintance(req, res, db_sess, user_id):
         if first_name is None:
             res['response']['text'] = 'Не расслышала имя. Повтори, пожалуйста!'
         # если нашли, то приветствуем пользователя.
-        # И спрашиваем какой режим он хочет выбрать.
+        # и спрашиваем какой режим он хочет выбрать.
         else:
             user.name = first_name.title()
             db_sess.commit()
@@ -116,33 +127,69 @@ def acquaintance(req, res, db_sess, user_id):
             ]
 
 
-def start_game(req, res, db_sess, user_id):
-    if req["request"]["command"] == "режим с подсказками" or req["request"]["command"] == "режим без подсказок":
-        user = db_sess.query(User).filter(User.yandex_id == user_id).first()
+def start_game(req, res, db_sess, user, game):
+    if req["request"]["command"] == "режим с подсказками" or \
+            req["request"]["command"] == "режим без подсказок" and not game:
         game = Game()
         game.user_id = user.id
+        game.answered = 0
+        game.end = False
         if req["request"]["command"] == "режим с подсказками":
             game.hints = 3
         db_sess.add(game)
         db_sess.commit()
+        return game
 
 
-def continue_game(req, res, db_sess, user_id):
-    user = db_sess.query(User).filter(User.yandex_id == user_id).first()
-    game = db_sess.query(Game).filter(Game.user_id == user.id).first()
-    if game:
-        res['response']['card'] = {}
-        res['response']['card']['type'] = 'BigImage'
-        res['response']['card']['title'] = 'Как называется этот фильм'
-        frames_id = [frame.id for frame in db_sess.query(Frame).all()]
-        res['response']['card']['image_id'] = random.choice(frames_id)
-        res['response']['text'] = 'Как называется этот фильм'
-        res['response']['buttons'] = [
-            {"title": "xи",
-             "hide": True},
-            {"title": "xк",
-             "hide": True}
-        ]
+def continue_game(req, res, db_sess, user, game):
+    frames_id = [frame.id for frame in db_sess.query(Frame).all()]
+    previous_frames = [frame.id for frame in game.frames]
+    diff = set(frames_id) - set(previous_frames)
+    frame_id = choice(list(diff))
+    frame = db_sess.query(Frame).filter(Frame.id == frame_id).first()
+    game.frames.append(frame)
+    movie = db_sess.query(Movie).filter(Movie.id == frame.film_id).first()
+    movie_names = sample([movie.name for movie in db_sess.query(Movie).all()], 4)
+    if movie.name not in movie_names:
+        movie_names.append(movie.name)
+        movie_names.pop(0)
+    shuffle(movie_names)
+    db_sess.commit()
+
+    res['response']['card'] = {}
+    res['response']['card']['type'] = 'BigImage'
+    res['response']['card']['image_id'] = frame_id
+    if not res['response']['text']:
+        res['response']['text'] = 'Как называется этот фильм?'
+        res['response']['card']['title'] = 'Как называется этот фильм?'
+    else:
+        res['response']['card']['title'] = res['response']['text'] + ' Что это за фильм?'
+    res['response']['buttons'] = [
+        {"title": name,
+         "hide": True}
+        for name in movie_names]
+
+
+def check_answer(req, res, db_sess, game):
+    if game.frames:
+        previous_frame = game.frames[-1]
+        movie = db_sess.query(Movie).filter(Movie.id == previous_frame.film_id).first()
+        if req["request"]["original_utterance"] == movie.name:
+            res['response']['text'] = 'Верно. Следующий кадр.'
+            game.answered += 1
+        else:
+            res['response']['text'] = 'Неверно. Похоже ты проиграл.'
+            game.end = True
+
+        if game.answered == 5:
+            game.end = True
+            game.user.rating += game.answered + 3
+            res['response']['text'] = 'Мои поздравления. Это победа'
+        db_sess.commit()
+
+
+def end_game():
+    pass
 
 
 if __name__ == '__main__':

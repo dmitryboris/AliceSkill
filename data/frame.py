@@ -20,4 +20,4 @@ class Frame(SqlAlchemyBase, UserMixin, SerializerMixin):
                          back_populates='frames')
 
     def __repr__(self):
-        return f'<Frame> {self.id} {self.name}'
+        return f'<Frame> {self.id} {self.film_id}'

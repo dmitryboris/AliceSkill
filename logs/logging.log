@@ -2417,3 +2417,585 @@ INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:04:54] "POST /post HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:04:56] "POST /post HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:05:00] "POST /post HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:05:02] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:09:44] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:09:46] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:09:50] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:11:39] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:37:53] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 47, in handle_dialog
+    continue_game(req, res, db_sess, user, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 139, in continue_game
+    shuffle(buttons)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\random.py", line 304, in shuffle
+    for i in reversed(range(1, len(x))):
+TypeError: object of type 'NoneType' has no len()
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:37:57] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:39:15] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 47, in handle_dialog
+    continue_game(req, res, db_sess, user, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 141, in continue_game
+    shuffle(buttons)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\random.py", line 304, in shuffle
+    for i in reversed(range(1, len(x))):
+TypeError: object of type 'NoneType' has no len()
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:39:17] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:39:50] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 47, in handle_dialog
+    continue_game(req, res, db_sess, user, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 141, in continue_game
+    shuffle(buttons)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\random.py", line 304, in shuffle
+    for i in reversed(range(1, len(x))):
+TypeError: object of type 'NoneType' has no len()
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:39:52] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:43:14] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 47, in handle_dialog
+    continue_game(req, res, db_sess, user, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 141, in continue_game
+    shuffle(buttons)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\random.py", line 304, in shuffle
+    for i in reversed(range(1, len(x))):
+TypeError: object of type 'NoneType' has no len()
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:43:16] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:44:14] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 47, in handle_dialog
+    continue_game(req, res, db_sess, user, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 141, in continue_game
+    shuffle(buttons)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\random.py", line 304, in shuffle
+    for i in reversed(range(1, len(x))):
+TypeError: object of type 'NoneType' has no len()
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:44:15] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:54:15] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:54:18] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:54:32] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:54:40] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 19:54:47] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 20:01:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 20:01:08] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 20:01:19] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 20:01:25] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 20:01:31] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 20:01:36] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 20:26:37] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 48, in handle_dialog
+    check_answer(db_sess, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 165, in check_answer
+    previous_frames = db_sess.query(association_table).filter(association_table.game == game.id).all()
+AttributeError: 'Table' object has no attribute 'game'
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 20:26:39] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 37, in handle_dialog
+    game = db_sess.query(Game).filter(Game.user_id == user.id).first()
+AttributeError: 'NoneType' object has no attribute 'id'
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 21:57:45] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 21:59:03] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 21:59:07] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 21:59:13] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 21:59:18] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 21:59:23] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:01:37] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:01:41] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:02:20] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:02:21] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:05:00] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 48, in handle_dialog
+    check_answer(db_sess, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 166, in check_answer
+    previous_frames = db_sess.query(association_table).filter(association_table.game == game.id).all()
+AttributeError: 'Table' object has no attribute 'game'
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:05:03] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:05:55] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 49, in handle_dialog
+    continue_game(req, res, db_sess, user, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 139, in continue_game
+    frame_id = choice(frames_id)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:05:58] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:08:26] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 49, in handle_dialog
+    continue_game(req, res, db_sess, user, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 141, in continue_game
+    previous_frames = db_sess.query(association_table).filter(association_table.game == game.id).all()
+AttributeError: 'Table' object has no attribute 'game'
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:08:29] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:09:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:09:08] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:09:16] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:10:49] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:10:52] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:10:54] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:12:40] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:12:43] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:12:46] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:19:26] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:19:30] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:19:33] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:20:50] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:21:31] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:21:42] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:22:04] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:22:07] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:22:07] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:22:07] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:22:07] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:22:17] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:22:47] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:22:49] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:23:01] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:34:27] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:34:29] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:34:31] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:34:35] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:34:37] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2022 22:34:39] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:11:55] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:11:58] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:12:03] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:12:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:12:13] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:43:28] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:43:32] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:43:37] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:43:41] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:44:49] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:44:51] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 52, in handle_dialog
+    continue_game(req, res, db_sess, user, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 146, in continue_game
+    movie = db_sess.query(Movie).filter(Movie.id == frame.film_id).first()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 2819, in first
+    return self.limit(1)._iter().first()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1640, in execute
+    ) = compile_state_cls.orm_pre_session_exec(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\context.py", line 319, in orm_pre_session_exec
+    session._autoflush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 2237, in _autoflush
+    util.raise_(e, with_traceback=sys.exc_info()[2])
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 2226, in _autoflush
+    self.flush()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3363, in flush
+    self._flush(objects)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3503, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 3463, in _flush
+    flush_context.execute()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 579, in execute
+    self.dependency_processor.process_saves(uow, states)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\dependency.py", line 1182, in process_saves
+    self._run_crud(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\dependency.py", line 1245, in _run_crud
+    connection.execute(statement, secondary_insert)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1306, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\sql\elements.py", line 326, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO frames_to_game (frame, game) VALUES (?, ?)]
+[parameters: ('1652229/68ed8231031981ca150b', 1)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:45:03] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:47:23] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:47:26] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 28, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 51, in handle_dialog
+    check_answer(req, res, db_sess, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 169, in check_answer
+    if req["request"]["command"] == movie.name:
+AttributeError: 'Query' object has no attribute 'name'
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:47:33] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:48:12] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:48:14] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 19:48:17] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:04:33] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:04:44] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:05:54] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:05:56] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:10:03] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:10:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:10:26] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:10:27] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:10:29] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:10:31] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 54, in handle_dialog
+    continue_game(req, res, db_sess, user, game)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 145, in continue_game
+    frame_id = choice(list(diff))
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:10:34] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:15:55] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:15:58] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:16:24] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 53, in handle_dialog
+    if res['response']['text'] == 'Верно. Следующий кадр.':
+KeyError: 'text'
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:16:25] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:17:55] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 53, in handle_dialog
+    if not res['response']['text'] or res['response']['text'] == 'Верно. Следующий кадр.':
+KeyError: 'text'
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:17:56] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:19:16] "POST /post HTTP/1.1" 200 -
+ERROR:main:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Dima\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 27, in main
+    handle_dialog(response, request.json)
+  File "C:/Users/Dima/PycharmProjects/Alices_Skill/main.py", line 53, in handle_dialog
+    if not res['response']['text'] or res['response']['text'] == 'Верно. Следующий кадр.':
+KeyError: 'text'
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:19:17] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:20:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:20:55] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:20:57] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:23:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:23:08] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:23:24] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:23:26] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:23:31] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:24:54] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:24:57] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:25:17] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:25:21] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:25:34] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:26:16] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:26:18] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:26:23] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:26:55] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:27:07] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:27:09] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:27:13] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:27:27] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:28:45] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:28:47] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:28:51] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:28:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:28:58] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:29:03] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:29:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:32:24] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:32:35] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:32:40] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:33:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:33:55] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:33:57] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:34:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:34:08] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:34:10] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:34:34] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:34:38] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:34:42] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:34:46] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:34:58] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:35:00] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:35:02] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:35:05] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:35:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:35:09] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:35:33] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:35:36] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:35:38] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:35:40] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:53:29] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:53:32] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:53:36] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:53:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:53:57] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:55:17] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:55:27] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:55:32] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:55:35] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:56:07] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:56:16] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:57:00] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:57:13] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:57:39] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:57:43] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:57:46] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:57:50] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:58:01] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:58:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:58:16] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:58:23] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:58:32] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2022 20:58:47] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2022 14:55:11] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2022 14:55:16] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2022 14:55:19] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2022 14:55:45] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2022 14:55:49] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2022 14:55:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2022 14:55:57] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2022 14:58:31] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2022 14:58:32] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2022 14:58:44] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2022 14:58:56] "POST /post HTTP/1.1" 200 -
