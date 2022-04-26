@@ -185,13 +185,14 @@ def continue_game(res, db_sess, game):
 
 
 def check_answer(req, res, db_sess, game):
-    if game.frames:
+    if game.frames and not game.end:
         previous_frame = game.frames[-1]
         movie = db_sess.query(Movie).filter(Movie.id == previous_frame.film_id).first()
         if req["request"]["original_utterance"].lower() == movie.name.lower():
             res['response']['text'] = 'Верно. Следующий кадр.'
             game.answered += 1
         else:
+            res['response']['text'] = 'Неверно.'
             game.end = True
 
         if game.answered == 5:
@@ -204,7 +205,10 @@ def end_game(res, db_sess, game):
         res['response']['text'] = 'Мои поздравления. Это победа. Хочешь сыграть ещё?'
         game.user.rating += 3
     else:
-        res['response']['text'] = 'Неверно. Похоже ты проиграл. Ничего страшного, хочешь сыграть ещё?'
+        if res['response']['text']:
+            res['response']['text'] += ' Похоже ты проиграл. Ничего страшного, хочешь сыграть ещё?'
+        else:
+            res['response']['text'] += 'Похоже ты проиграл. Ничего страшного, хочешь сыграть ещё?'
     game.user.rating += game.answered
     res['response']['buttons'] = [
         {"title": "Режим с подсказками",
@@ -215,8 +219,9 @@ def end_game(res, db_sess, game):
     db_sess.commit()
 
 
-# copy paste - redo
+# copy paste - redo?
 def check_old_game(req, res, db_sess, game):
+    old = None
     if req["request"]["command"] == "да хочу продолжить":
         old = True
         previous_frame = game.frames[-1]
@@ -238,8 +243,10 @@ def check_old_game(req, res, db_sess, game):
             {"title": name,
              "hide": True}
             for name in movie_names]
-    else:
+    elif req["request"]["command"] == "нет хочу начать новую":
         old = None
+        game.end = True
+        db_sess.commit()
     return old
 
 
