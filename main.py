@@ -46,11 +46,10 @@ def handle_dialog(res, req):
         greeting(res, db_sess, user_id, game)
     else:
         if user and not game:
-            # если сессия не новая, то знакомимся.
+            # если сессия не новая, то знакомимся и начинаем игру.
             acquaintance(req, res, db_sess, user)
             game = start_game(req, db_sess, user, game)
         if user and game:
-            # old = check_old_game() все дальше обернуть в if not old?
             old = check_old_game(req, res, db_sess, game)
             if not old:
                 check_answer(req, res, db_sess, game)
@@ -81,6 +80,7 @@ def new_user(db_sess, user_id):
     db_sess.commit()
 
 
+# приветствуем пользователя
 def greeting(res, db_sess, user_id, game):
     user = db_sess.query(User).filter(User.yandex_id == user_id).first()
 
@@ -102,7 +102,6 @@ def greeting(res, db_sess, user_id, game):
             {"title": "Режим без подсказок",
              "hide": True}
         ]
-    # ???
 
     if user and user.name and game:
         res['response']['text'] = f'Привет, {user.name}! Похоже ты не доиграл предыдущую игру. Хочешь продолжить?'
@@ -115,6 +114,7 @@ def greeting(res, db_sess, user_id, game):
         ]
 
 
+# знакомство с пользователем
 def acquaintance(req, res, db_sess, user):
     # если поле имени пустое, то это говорит о том,
     # что пользователь еще не представился.
@@ -155,6 +155,7 @@ def start_game(req, db_sess, user, game):
         return game
 
 
+# выбираем кадр и создаем кнопки для ответа
 def continue_game(res, db_sess, game):
     frames_id = [frame.id for frame in db_sess.query(Frame).all()]
     previous_frames = [frame.id for frame in game.frames]
@@ -182,8 +183,12 @@ def continue_game(res, db_sess, game):
         {"title": name,
          "hide": True}
         for name in movie_names]
+    if game.hints:
+        res['response']['buttons'].append({"title": "Подсказка",
+                                           "hide": True})
 
 
+# проверка ответа
 def check_answer(req, res, db_sess, game):
     if game.frames and not game.end:
         previous_frame = game.frames[-1]
@@ -200,6 +205,7 @@ def check_answer(req, res, db_sess, game):
         db_sess.commit()
 
 
+# окончание игры
 def end_game(res, db_sess, game):
     if game.answered == 5:
         res['response']['text'] = 'Мои поздравления. Это победа. Хочешь сыграть ещё?'
@@ -219,7 +225,7 @@ def end_game(res, db_sess, game):
     db_sess.commit()
 
 
-# copy paste - redo?
+# проверка будет ли пользователь продолжать старую игру
 def check_old_game(req, res, db_sess, game):
     old = None
     if req["request"]["command"] == "да хочу продолжить":
