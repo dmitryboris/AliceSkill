@@ -45,6 +45,7 @@ def handle_dialog(res, req):
     if req['session']['new']:
         greeting(res, db_sess, user_id, game)
     else:
+        top_users(req, res, db_sess, user)
         if user and not game:
             # если сессия не новая, то знакомимся и начинаем игру.
             acquaintance(req, res, db_sess, user)
@@ -52,6 +53,7 @@ def handle_dialog(res, req):
         if user and game:
             old = check_old_game(req, res, db_sess, game)
             if not old:
+                # check_hints(req, res, db_sess, game)
                 check_answer(req, res, db_sess, game)
                 if game.end:
                     end_game(res, db_sess, game)
@@ -100,6 +102,8 @@ def greeting(res, db_sess, user_id, game):
             {"title": "Режим с подсказками",
              "hide": True},
             {"title": "Режим без подсказок",
+             "hide": True},
+            {"title": "Топ пользователей",
              "hide": True}
         ]
 
@@ -137,6 +141,8 @@ def acquaintance(req, res, db_sess, user):
                 {"title": "Режим с подсказками",
                  "hide": True},
                 {"title": "Режим без подсказок",
+                 "hide": True},
+                {"title": "Топ пользователей",
                  "hide": True}
             ]
 
@@ -254,6 +260,22 @@ def check_old_game(req, res, db_sess, game):
         game.end = True
         db_sess.commit()
     return old
+
+
+def check_hints(req, res, db_sess, game):
+    if req["request"]["command"] == "подсказка":
+        previous_frame = game.frames[-1]
+        movie = db_sess.query(Movie).filter(Movie.id == previous_frame.film_id).first()
+
+
+def top_users(req, res, db_sess, user):
+    if req["request"]["command"] == "топ пользователей":
+        top = db_sess.query(User).order_by(User.rating)[:10]
+        text = 'Каждый правльный ответ даёт 1 очко, выигранная игра даёт 3. \n' + '\n'
+        for key, i in enumerate(top):
+            text += str(key + 1) + '. ' + i.__repr__() + '\n'
+        text += '\n' + '\n' + 'Твоя статистика: ' + user.__repr__()
+        res['response']['text'] = text
 
 
 if __name__ == '__main__':

@@ -17,4 +17,4 @@ class User(SqlAlchemyBase, UserMixin, SerializerMixin):
     game = relationship('Game')
 
     def __repr__(self):
-        return f'<User> {self.id} {self.name}'
+        return f'{self.name} {self.rating}'
