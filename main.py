@@ -34,12 +34,24 @@ def handle_dialog(res, req):
     db_sess = db_session.create_session()
     user_id = req['session']['user']['user_id']
     user = db_sess.query(User).filter(User.yandex_id == user_id).first()
-    if user:
-        game = db_sess.query(Game).filter(Game.user_id == user.id).all()[-1]
+    try:
+        game = user.game[-1]
+        if game.end:
+            game = None
+    except IndexError:
+        game = None
+    except AttributeError:
+        game = None
+
+    """if user.name:
+        try:
+            game = db_sess.query(Game).filter(Game.user_id == user.id).all()[-1]
+        except IndexError:
+            game = None
         if game.end:
             game = None
     else:
-        game = None
+        game = None"""
 
     # если сессия новая, то приветсвуем пользователя.
     if req['session']['new']:
@@ -53,7 +65,6 @@ def handle_dialog(res, req):
         if user and game:
             old = check_old_game(req, res, db_sess, game)
             if not old:
-                # check_hints(req, res, db_sess, game)
                 check_answer(req, res, db_sess, game)
                 if game.end:
                     end_game(res, db_sess, game)
@@ -163,12 +174,15 @@ def start_game(req, db_sess, user, game):
 
 # выбираем кадр и создаем кнопки для ответа
 def continue_game(res, db_sess, game):
-    frames_id = [frame.id for frame in db_sess.query(Frame).all()]
-    previous_frames = [frame.id for frame in game.frames]
-    diff = set(frames_id) - set(previous_frames)
-    frame_id = choice(list(diff))
-    frame = db_sess.query(Frame).filter(Frame.id == frame_id).first()
-    game.frames.append(frame)
+    if res["response"]["text"].startswith("Главный"):
+        frame = game.frames[-1]
+    else:
+        frames_id = [frame.id for frame in db_sess.query(Frame).all()]
+        previous_frames = [frame.id for frame in game.frames]
+        diff = set(frames_id) - set(previous_frames)
+        frame_id = choice(list(diff))
+        frame = db_sess.query(Frame).filter(Frame.id == frame_id).first()
+        game.frames.append(frame)
     movie = db_sess.query(Movie).filter(Movie.id == frame.film_id).first()
     movie_names = sample([movie.name for movie in db_sess.query(Movie).all()], 4)
     if movie.name not in movie_names:
@@ -179,7 +193,7 @@ def continue_game(res, db_sess, game):
 
     res['response']['card'] = {}
     res['response']['card']['type'] = 'BigImage'
-    res['response']['card']['image_id'] = frame_id
+    res['response']['card']['image_id'] = frame.id
     if not res['response']['text']:
         res['response']['text'] = 'Как называется этот фильм?'
         res['response']['card']['title'] = 'Как называется этот фильм?'
@@ -202,8 +216,13 @@ def check_answer(req, res, db_sess, game):
         if req["request"]["original_utterance"].lower() == movie.name.lower():
             res['response']['text'] = 'Верно. Следующий кадр.'
             game.answered += 1
+        elif req["request"]["command"] == "подсказка" and game.hints:
+            res["response"]["text"] = f"Главный герой этого фильма - {movie.character}."
+            game.hints -= 1
+        elif req["request"]["command"] == "подсказка" and not game.hints:
+            res["response"]["text"] = "У тебя больше нет подсказок"
         else:
-            res['response']['text'] = 'Неверно.'
+            res["response"]["text"] = "Неверно."
             game.end = True
 
         if game.answered == 5:
@@ -218,14 +237,16 @@ def end_game(res, db_sess, game):
         game.user.rating += 3
     else:
         if res['response']['text']:
-            res['response']['text'] += ' Похоже ты проиграл. Ничего страшного, хочешь сыграть ещё?'
+            res['response']['text'] += " Похоже ты проиграл. Ничего страшного, хочешь сыграть ещё?"
         else:
-            res['response']['text'] += 'Похоже ты проиграл. Ничего страшного, хочешь сыграть ещё?'
+            res['response']['text'] = "Похоже ты проиграл. Ничего страшного, хочешь сыграть ещё?"
     game.user.rating += game.answered
     res['response']['buttons'] = [
         {"title": "Режим с подсказками",
          "hide": True},
         {"title": "Режим без подсказок",
+         "hide": True},
+        {"title": "Топ пользователей",
          "hide": True}
     ]
     db_sess.commit()
@@ -262,20 +283,22 @@ def check_old_game(req, res, db_sess, game):
     return old
 
 
-def check_hints(req, res, db_sess, game):
-    if req["request"]["command"] == "подсказка":
-        previous_frame = game.frames[-1]
-        movie = db_sess.query(Movie).filter(Movie.id == previous_frame.film_id).first()
-
-
 def top_users(req, res, db_sess, user):
     if req["request"]["command"] == "топ пользователей":
         top = db_sess.query(User).order_by(User.rating)[:10]
-        text = 'Каждый правльный ответ даёт 1 очко, выигранная игра даёт 3. \n' + '\n'
+        text = 'Каждый правльный ответ даёт 1 очко, выигранная игра даёт 3. \n' + '\n' + \
+               'Топ пользователей:' + '\n' + '\n'
         for key, i in enumerate(top):
             text += str(key + 1) + '. ' + i.__repr__() + '\n'
         text += '\n' + '\n' + 'Твоя статистика: ' + user.__repr__()
+
         res['response']['text'] = text
+        res['response']['buttons'] = [
+            {"title": "Режим с подсказками",
+             "hide": True},
+            {"title": "Режим без подсказок",
+             "hide": True}
+        ]
 
 
 if __name__ == '__main__':

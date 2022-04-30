@@ -11,6 +11,7 @@ class Movie(SqlAlchemyBase, UserMixin, SerializerMixin):
 
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
     name = sqlalchemy.Column(sqlalchemy.String, nullable=True)
+    character = sqlalchemy.Column(sqlalchemy.String, nullable=True)
 
     frame = relationship('Frame')
 
