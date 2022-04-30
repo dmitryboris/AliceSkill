@@ -3313,3 +3313,16 @@ INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:03:07] "POST /post HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:03:16] "POST /post HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:03:22] "POST /post HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:03:28] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:27:38] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:27:50] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:28:00] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:28:10] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:28:19] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:28:24] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:28:26] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:28:29] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:28:32] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:28:36] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:28:40] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Apr/2022 18:28:43] "POST /post HTTP/1.1" 200 -
