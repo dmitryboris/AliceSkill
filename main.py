@@ -43,16 +43,6 @@ def handle_dialog(res, req):
     except AttributeError:
         game = None
 
-    """if user.name:
-        try:
-            game = db_sess.query(Game).filter(Game.user_id == user.id).all()[-1]
-        except IndexError:
-            game = None
-        if game.end:
-            game = None
-    else:
-        game = None"""
-
     # если сессия новая, то приветсвуем пользователя.
     if req['session']['new']:
         greeting(res, db_sess, user_id, game)
