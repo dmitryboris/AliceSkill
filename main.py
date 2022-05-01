@@ -276,8 +276,8 @@ def check_old_game(req, res, db_sess, game):
 def top_users(req, res, db_sess, user):
     if req["request"]["command"] == "топ пользователей":
         top = db_sess.query(User).order_by(User.rating)[:10]
-        text = 'Каждый правльный ответ даёт 1 очко, выигранная игра даёт 3. \n' + '\n' + \
-               'Топ пользователей:' + '\n' + '\n'
+        text = 'Каждый правльный ответ даёт 1 очко, выигранная игра даёт 3. \n' + \
+               'Топ пользователей:' + '\n'
         for key, i in enumerate(top):
             text += str(key + 1) + '. ' + i.__repr__() + '\n'
         text += '\n' + '\n' + 'Твоя статистика: ' + user.__repr__()
